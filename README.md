@@ -1,68 +1,99 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REACT DEVELOPMENT TEST
 
-## Available Scripts
+## Battleship game
 
-In the project directory, you can run:
+### MAIN GOAL
+Develop a simplified React version of the battleship game; player vs CPU.
 
-### `yarn start`
+### GAME ELEMENTS AND CHARACTERISTICS
+- 10x10 board size
+- 1 carrier of 4 spaces
+- 3 cruisers of 3 spaces
+- 1 submarine of 2 spaces
+- Ships must be straight lines
+- Ships can be placed horizontally or vertically
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### BASIC GAMEPLAY
+The game should have at least **3 screens** with the following components and actions.
+<br/>All mockups are just for reference and can be improved.
 
-### `yarn test`
+#### START SCREEN
+- Place your ships on the board
+- Enter player name
+- Button with “Start game” label
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<center>
 
-### `yarn build`
+![Start Screen Screenshot](README_START_SCREEN.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</center>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### GAME SCREEN
+- Player and CPU boards
+- Game state ("Playing: Player name or CPU")
+- Clicking on computer board, you launch your missiles
+- Launched missiles reference<br>HIT -orange-, DESTROYED -red-, MISSED/WATER -light blue-
+- Attempt feedback (ship hit, ship destroyed, shot missed)
+- CPU missiles can't be launched in random way (once the CPU hits a ship, the next shots must follow some strategy in order to sink the ship)
+- Surrender button to end the game manually
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<center>
 
-### `yarn eject`
+![Game Screen Screenshot](README_GAME_SCREEN.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+</center>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### END GAME SCREEN
+- Game result: won, lost, surrendered
+- Restart button to go back to the Start screen
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<center>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```html
+For more info about the game, check the Wikipedia article.
+https://en.wikipedia.org/wiki/Battleship_(game)
+```
 
-## Learn More
+</center>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### REQUIREMENTS
+- You need to create a **GitHub repository** and send us the link so we can see the progress
+- Please, try to **commit often and use clear and concise commit messages**
+- The project must be **bootstrapped with Create React App** (<span>https</span>://github.com/facebook/create-react-app)
+- Use **React Hooks** and avoid to use Classes
+- You must use **Redux** to manage the application state
+- Use **React Testing Library** to test the application
+- Each component must have its **own test file**
+- Tests all the features that you **consider to be relevant**
+- Include **Snapshots Testing**
+- Try to reach a **good percentage of coverage**
+- Include **ESLint using Airbnb's ESLint Rules** (eslint-config-airbnb)
+- Keep the use of **third-party packages to a minimum**
+- Try to use the **latest versions of the packages** that are included
+- **Add documentation**, highlight on complex logics
+- Should work in the **latest versions of all major browsers** (Edge, Chrome, Firefox, Safari), both **desktop and mobile**
+- Code and comments must be in **English**
+- Keep in mind that we are going to analyze the code, look at **good practices, variable names, structures and so on, good luck!**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+(_[PDF challenge file](Battleship-FrontendReact(5).pdf) by [Arzion](https://www.arzion.com/)_)
 
-### Code Splitting
+<center>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![Game Screen Screenshot](README_SHIPS.png)
 
-### Analyzing the Bundle Size
+</center>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+---
 
-### Making a Progressive Web App
+### My Notes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Researched sites
+- Markdown
+    - [Mastering Markdown](https://guides.github.com/features/mastering-markdown)
+    - [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax#html)
+    - [Creating and highlighting code blocks](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
+    - [How do I prevent auto-generated links in the GitHub wiki?](https://stackoverflow.com/questions/25706012/how-do-i-prevent-auto-generated-links-in-the-github-wiki)
+- Battleship Game
+    - [Battleship (game)](https://en.wikipedia.org/wiki/Battleship_(game))
+    - [Batalla naval (juego)](https://es.wikipedia.org/wiki/Batalla_naval_(juego))
