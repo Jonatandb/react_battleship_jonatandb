@@ -23,11 +23,9 @@ The game should have at least **3 screens** with the following components and ac
 - Enter player name
 - Button with “Start game” label
 
-<center>
-
-![Start Screen Screenshot](README_START_SCREEN.png)
-
-</center>
+<p align="center">
+    <img src="README_START_SCREEN.png" alt="Start Screen Screenshot"/>
+</p>
 
 #### GAME SCREEN
 - Player and CPU boards
@@ -38,24 +36,22 @@ The game should have at least **3 screens** with the following components and ac
 - CPU missiles can't be launched in random way (once the CPU hits a ship, the next shots must follow some strategy in order to sink the ship)
 - Surrender button to end the game manually
 
-<center>
-
-![Game Screen Screenshot](README_GAME_SCREEN.png)
-
-</center>
+<p align="center">
+    <img src="README_GAME_SCREEN.png" alt="Game Screen Screenshot"/>
+</p>
 
 #### END GAME SCREEN
 - Game result: won, lost, surrendered
 - Restart button to go back to the Start screen
 
-<center>
+<p align="center">
 
 ```html
 For more info about the game, check the Wikipedia article.
 https://en.wikipedia.org/wiki/Battleship_(game)
 ```
 
-</center>
+</p>
 
 ### REQUIREMENTS
 - You need to create a **GitHub repository** and send us the link so we can see the progress
@@ -78,11 +74,10 @@ https://en.wikipedia.org/wiki/Battleship_(game)
 
 (_[PDF challenge file](Battleship-FrontendReact(5).pdf) by [Arzion](https://www.arzion.com/)_)
 
-<center>
+<p align="center">
+    <img src="README_SHIPS.png" alt="Ships Screenshot"/>
+</p>
 
-![Game Screen Screenshot](README_SHIPS.png)
-
-</center>
 
 ---
 
